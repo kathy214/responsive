@@ -1,0 +1,298 @@
+/*字体图标*/
+@font-face {
+    font-family: 'myfont';
+    src:
+    url(fonts/MiFie-Web-Font.eot) format('embedded-opentype'),
+    url(fonts/MiFie-Web-Font.svg) format('svg'),
+    url(fonts/MiFie-Web-Font.ttf) format('truetype'),
+    url(fonts/MiFie-Web-Font.woff) format('woff')
+}
+.iconfont{
+    font-family: 'myfont';
+}
+.mobile-icon::before{
+    content: "\e908";
+}
+.tel-icon::before{
+    content: '\e909';
+}
+.logo1-icon::before{
+    content: "\e920";
+    font-size: 40px;
+    color: #E92322;
+}
+.logo2-icon::before{
+    content: "\e93e";
+    font-size: 36px;
+}
+.money-icon::before{
+    content: "\e907";
+    font-size: 40px;
+}
+.media-icon::before{
+    content: "\e905";
+    margin-right: 5px;
+}
+.block-icon::before{
+    content: "\e906";
+    margin-right: 5px;
+}
+.ty-icon::before{
+    content: "\e915";
+    position: absolute;
+    font-size: 40px;
+    top: -9px;
+    left: 0;
+    color: #fff;
+}
+.earth-icon::before{
+    content: "\e90e";
+    font-size: 30px;
+}
+.new-icon::before{
+    content: "\e90f";
+    font-size: 30px;
+}
+.talk-icon::before{
+    content: "\e910";
+    font-size: 30px;
+}
+.pc-icon::before{
+    content: "\e911";
+    font-size: 30px;
+}
+/*头部开始*/
+.wjs-header{
+    height: 42px;
+    line-height: 40px;
+    text-align: center;
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+}
+.wjs-header div[class*="col-"]{
+    border-left: 1px solid #ccc;
+}
+.wjs-header div[class*="col-"]:nth-child(1){
+    border-left: none;
+}
+.btn-danger{
+    margin-bottom: 4px;
+}
+.wjs-header div[class*="col-"]:nth-child(4) a{
+    text-decoration: none;
+    color: #000;
+    margin-left: 10px;
+}
+.wjs-header div[class*="col-"]:nth-child(3) span{
+    margin:0 2px;
+}
+/*导航开始*/
+.wjs-nav{
+    text-align: center;
+    width: 100%;
+    z-index: 9998;
+    top: 0;
+}
+.wjs-nav .navbar {
+    background-color: #fff;
+    margin-bottom: 0;
+}
+.wjs-nav .navbar .navbar-brand{
+    height: 80px;
+    line-height: 50px;
+}
+.wjs-nav .navbar li{
+    height: 80px;
+    padding: 15px 0;
+}
+.wjs-nav .navbar .nav .active{
+    border-bottom: 2px solid red;
+}
+.wjs-nav .navbar .nav .active a{
+    background-color: #fff;
+}
+.wjs-nav .navbar li:hover{
+    border-bottom: 2px solid red;
+}
+.wjs-nav .navbar .navbar-toggle{
+    margin-top: 23px;
+}
+
+/*轮播图*/
+/*.carousel .carousel-inner .item{
+/!*插件自身带的有相对定位，不用再写，写了会出问题*!/
+    position: relative;
+}*/
+/*.wjs-carousel{
+    position: relative;
+    top: 80px;
+}*/
+.carousel .carousel-inner .item{
+    height: 410px;
+}
+.carousel .carousel-inner .item img{
+    position: absolute;
+    height: 410px;
+    max-width: none;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+
+/*支付交易保障*/
+.wjs-pay{
+    margin: 50px 0;
+}
+.wjs-pay .media  .media-left a{
+    text-decoration: none;
+}
+.wjs-pay div[class*="col-"]{
+    margin: 15px 0;
+}
+
+
+/*预约模块*/
+.wjs-book{
+    height: 65px;
+    line-height: 65px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+}
+.wjs-book a{
+    text-decoration: none;
+    color: #000;
+}
+.wjs-book .book-left{
+    float: left;
+}
+.wjs-book .book-left p{
+    float: left;
+}
+.wjs-book .book-left a{
+    float: left;
+}
+.wjs-book .book-right{
+    float: right;
+}
+
+/*tab栏切换*/
+.wjs-change{
+    background-color: #f0f0f0;
+    padding: 50px 0;
+}
+.wjs-change .list{
+    padding-bottom: 15px;
+    overflow: auto;
+}
+.wjs-change .nav-tabs>li.active>a{
+    background-color: transparent;
+    border-color:transparent;
+    border-bottom: 2px solid #d90000;
+}
+.wjs-change .tab-content .item.active{
+    background-color: #d90000;
+    color: #fff;
+}
+.wjs-change .tab-content .tab-pane,
+.wjs-change .tab-content{
+    overflow: hidden;
+}
+.wjs-change .tab-content .tab-pane .row> div[class*="col-"]{
+    margin-top: 20px;
+}
+.wjs-change .tab-content .item{
+    height: 160px;
+    background-color: #fff;
+}
+.wjs-change .tab-content .item .item-right{
+    height: 160px;
+    width: 120px;
+    border-left: 1px dashed #ccc;
+    float: right;
+    position: relative;
+}
+.wjs-change .tab-content .item .item-right::before,
+.wjs-change .tab-content .item .item-right::after{
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    transform: translate(-50%,-50%);
+}
+.wjs-change .tab-content .item .item-right::after{
+    top: auto;
+    bottom: 0;
+    transform: translate(-50%,50%);
+}
+.wjs-change .tab-content .item .item-right p{
+    text-align: center;
+    margin: 0 0 10px;
+    font-size: 14px;
+}
+.wjs-change .tab-content .item .item-right p:first-child{
+    margin-top: 70px;
+}
+.wjs-change .tab-content .item .item-right p span{
+    font-size: 30px;
+}
+.wjs-change .tab-content .item .item-left{
+    overflow: hidden;
+    margin-right: 120px;
+    position: relative;
+}
+.wjs-change .item-left .price .text-right{
+  text-align: right;
+}
+.wjs-change .item-left>h3{
+    text-align: center;
+    font-size: 18px;
+}
+
+/*全部新闻*/
+.wjs-news{
+
+    padding: 50px 0;
+}
+.wjs-news .newsall h2{
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 15px;
+    font-size: 20px;
+    border-bottom: 1px dashed #ccc;
+    position: relative;
+
+}
+.wjs-news .newsall h2::before{
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    bottom: -5px;
+    right: -10px;
+}
+.wjs-news .row .nav{
+    text-align: center;
+}
+.wjs-news .row .nav>li>a{
+    height: 70px;
+    width: 70px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+@media (max-width:970px) {
+    .wjs-news .row .nav>li{
+        float: left;
+        width: 25%;
+    }
+}
